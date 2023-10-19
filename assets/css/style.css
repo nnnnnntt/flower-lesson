@@ -9,6 +9,8 @@ html{
 }
 
 body{
+  color: #FFFFFF;
+  background: #050507;
   line-height: 1.5;
   font-size: 1.6rem;
   box-sizing: border-box;
@@ -22,5 +24,74 @@ img{
 .container{
   width: 800px;
   padding-inline: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+/* haeder */
+
+header {
+  position: fixed;
+  width: calc(100% - 60px);
+  padding: 35px 30px;
+}
+
+header h1{
+  font-size: 1.8rem;
+}
+
+header .hamburger{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  top: 35px;
+  right: 30px;
+}
+
+header .hamburger span {
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.5s;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header .hamburger span:nth-child(1) {
+  top: 10px;
+}
+
+header .hamburger span:nth-child(2) {
+  top: 20px;
+}
+
+header .hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+header nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+header nav ul{
+  background: #050507;
+  text-align: center;
+  width: 400px;
+  margin-inline: auto;
+  padding: 60px 0;
+}
+
+header nav ul li{
+  padding: 16px 0;
+  font-weight: normal;
 }
 
